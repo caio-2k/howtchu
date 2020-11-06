@@ -1,2 +1,2 @@
 # howtchu
-Repositório destinado a postar alguns tutoriais de fixação sobre variados temas.
+Repositório destinado a postar algumas notas pessoais de fixação sobre variados temas.
