@@ -22,7 +22,7 @@ Recentemente, enquanto estudava Asterisk me deparei com um problema no momento d
 
 A partir do Asterisk 16 o Macro não é mais carregado e para isso o usuário deve carrega-lo manualmente, para isso:
 
- 1- Você deve carregar o módulo "app_macro.so" no menuselect do Asterisk e por fim recompila-lo (processo já detalhado aqui).
+1- Você deve carregar o módulo "app_macro.so" no menuselect do Asterisk e por fim recompila-lo (processo já detalhado aqui).
 
 2 - Adicione o módulo em "/etc/asterisk/modules.conf":
  - Abra o arquivo .conf com seu editor favorito (vim, vi, nano, etc) e adicione a seguinte linha:  `load => app_macro.so`
@@ -46,11 +46,16 @@ https://remmina.org/how-to-install-remmina/
 
 3 - Na página de registro, segue a forma correta de preenchimento:
 ![Remmina](https://i.imgur.com/yGqWaMc.png)
+
 **Grupo**: Nome ilustrativo da conexão.
+
 **Protocolo**: SSH sempre (a menos que você deseje outro tipo de conexão).
+
 **Servidor**: IP do seu servidor seguido da porta de conexão (por padrão a porta
 utilizada é a 22).
+
 **Nome do usuário**: Login da máquina que irá ser manipulada.
+
 **Senha do usuário**: Senha da máquina que será manipulada.
 
 Ao final, clique em Salvar e conectar e pronto, a conexão será estabelecida e você poderá manipular seu servidor a partir de qualquer ambiente Linux.
