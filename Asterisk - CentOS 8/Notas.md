@@ -30,3 +30,29 @@ A partir do Asterisk 16 o Macro não é mais carregado e para isso o usuário de
  3 - Inicie a CLI do seu Asterisk e digite: **module load app_macro.so**
 
 Pronto! Você já estará apto para utilizar a funcionalidade.
+
+<hr>
+
+<p align="center"><strong>Como manipular um servidor CentOS remotamente?</strong></p>
+
+Por padrão quando vamos trabalhar com distribuições linux destinadas ao gerenciamento de servidores utilizamos clientes SSH (Secure Socket Shell).
+Em ambientes Linux o cliente SSH mais popular é o PuTTY, é fácil na instalação e apenas uma linha de código no terminal nos permite estabelecer conexão com o nosso servidor remoto.
+Porém, particularmente utilizo um software open-source chamado Remmina que apesar de desempenhar diversas funções é utilizado em ambientes Linux para realizar conexão via SSH, a seguir irei demonstrar como instala-lo e iniciar uma comunicação entre a máquina e um servidor.
+
+1 - Clique no link abaixo e realize a instalação do Remmina de acordo com a distribuição Linux que você possuir:
+https://remmina.org/how-to-install-remmina/ 
+
+2 - Após instalado, inicie o Remmina, e clique no ícone de "+" onde você será levado a uma aba para registrar sua conexão.
+
+3 - Na página de registro, segue a forma correta de preenchimento:
+![Remmina](https://i.imgur.com/yGqWaMc.png)
+**Grupo**: Nome ilustrativo da conexão.
+**Protocolo**: SSH sempre (a menos que você deseje outro tipo de conexão).
+**Servidor**: IP do seu servidor seguido da porta de conexão (por padrão a porta
+utilizada é a 22).
+**Nome do usuário**: Login da máquina que irá ser manipulada.
+**Senha do usuário**: Senha da máquina que será manipulada.
+
+Ao final, clique em Salvar e conectar e pronto, a conexão será estabelecida e você poderá manipular seu servidor a partir de qualquer ambiente Linux.
+
+
