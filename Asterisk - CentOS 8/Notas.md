@@ -33,7 +33,7 @@ Pronto! Você já estará apto para utilizar a funcionalidade.
 
 <hr>
 
-<p align="center"><strong>Como manipular um servidor CentOS remotamente?</strong></p>
+<p align="center"><strong>Como manipular um servidor Linux remotamente?</strong></p>
 
 Por padrão quando vamos trabalhar com distribuições linux destinadas ao gerenciamento de servidores utilizamos clientes SSH (Secure Socket Shell).
 Em ambientes Linux o cliente SSH mais popular é o PuTTY, é fácil na instalação e apenas uma linha de código no terminal nos permite estabelecer conexão com o nosso servidor remoto.
