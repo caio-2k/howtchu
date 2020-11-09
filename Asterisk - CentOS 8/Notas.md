@@ -60,4 +60,4 @@ utilizada é a 22).
 
 Ao final, clique em Salvar e conectar e pronto, a conexão será estabelecida e você poderá manipular seu servidor a partir de qualquer ambiente Linux.
 
-
+Extra: Estabelecendo conexão via PuTTY, no terminal digite -> <strong>ssh IP_SERVER -p PORTA_SERVER</strong> e você terá a conexão.
