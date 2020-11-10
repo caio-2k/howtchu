@@ -99,7 +99,7 @@ Para isso:
 
 3 - Aberto o arquivo irá conter algumas configurações do SSH, procure a linha que contém a porta do SSH (por padrão é 22), remova o comentário e altere a porta padrão por uma porta livre que você desejar.
 
-4 - No mesmo arquivo procure a linha "**PermitRootLogin**", retire o comentário caso haja e altere o valor da variável para "**no**", impedindo assim que usuários não autenticados possam estabelecer conexão SSH entre máquinas.
+4 - No mesmo arquivo procure a linha "**PermitRootLogin**", retire o comentário caso haja e altere o valor da variável para "**yes**", impedindo assim que usuários não autenticados possam estabelecer conexão SSH entre máquinas.
 
 <hr>
 
