@@ -61,3 +61,28 @@ utilizada é a 22).
 Ao final, clique em Salvar e conectar e pronto, a conexão será estabelecida e você poderá manipular seu servidor a partir de qualquer ambiente Linux.
 
 Extra: Estabelecendo conexão via PuTTY, no terminal digite -> <strong>ssh IP_SERVER -p PORTA_SERVER</strong> e você terá a conexão.
+
+<hr>
+
+<p align="center"><strong>Configurando IP fixo no CentOS (VirtualBox)</strong></p>
+
+Utilizando Asterisk, é de extrema importância que o IP em que o serviço esteja instalado/hospedado não altere para que não haja queda na linha telefônica. Para isso, antes de iniciar o processo busque identificar qual o range de IP da sua máquina, e então:
+
+1 - Acesse o seguinte diretório: **/etc/sysconfig/network-scripts**
+*Nesse diretório geralmente há um arquivo que armazena as configurações da sua placa de rede.*
+
+2 - Utilizando o seu editor de texto favorito abra o arquivo de texto contido dentro do diretório anterior (ifcfg*).
+
+3 - Apague todo o conteúdo do arquivo e adicione as seguintes linhas:
+
+    DEVICE=NOME_DA_SUA_PLACA_DE_REDE
+    BOOTPRO=none
+    ONBOOT=yes
+    IPADDR=IP_FIXO_DA_MAQUINA
+    NETMASK=MASCARA_DA_REDE
+    GATEWAY=GATEWAY_DA_SUA_MAQUINA
+    PREFIX=PREFIXO_DA_MAQUINA
+
+Salve o arquivo, reinicie sua máquina e pronto!</br>
+Dica: utilize "**ping www.google.com**" para testar a conexão.
+
