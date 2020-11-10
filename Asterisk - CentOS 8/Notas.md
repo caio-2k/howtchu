@@ -68,7 +68,7 @@ Extra: Estabelecendo conexão via PuTTY, no terminal digite -> <strong>ssh IP_SE
 
 Utilizando Asterisk, é de extrema importância que o IP em que o serviço esteja instalado/hospedado não altere para que não haja queda na linha telefônica. Para isso, antes de iniciar o processo busque identificar qual o range de IP da sua máquina, e então:
 
-1 - Acesse o seguinte diretório: **/etc/sysconfig/network-scripts**
+1 - Acesse o seguinte diretório: **/etc/sysconfig/network-scripts**</br>
 *Nesse diretório geralmente há um arquivo que armazena as configurações da sua placa de rede.*
 
 2 - Utilizando o seu editor de texto favorito abra o arquivo de texto contido dentro do diretório anterior (ifcfg*).
