@@ -101,3 +101,21 @@ Para isso:
 
 4 - No mesmo arquivo procure a linha "**PermitRootLogin**", retire o comentário caso haja e altere o valor da variável para "**no**", impedindo assim que usuários não autenticados possam estabelecer conexão SSH entre máquinas.
 
+<hr>
+
+<p align="center"><strong>Speak-ng CentOS 8</strong></p>
+
+Pra quem possuir CentOS 8, utilize o espeak-ng (versão mais atual) dessa forma:
+
+"speak-ng -v pt-br -s 140 "TEXTO A SER FALADO" -w NOME_DO_ARQUIVO.wav"  (faça o mesmo para os outros arquivos).
+
+<hr>
+
+<p align="center"><strong>SOX CentOS 8</strong></p>
+"sox NOME_DO_ARQUIVO.wav -t raw -r 8000 -s -c 1 NOME_DO_ARQUIVO.sln"
+
+substitua o -s (tá deprecated) por "-e signed", ficando assim:
+
+"sox NOME_DO_ARQUIVO.wav -t raw -r 8000 -e signed -c 1 NOME_DO_ARQUIVO.sln"
+
+
