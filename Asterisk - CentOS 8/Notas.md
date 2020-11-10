@@ -86,3 +86,18 @@ Utilizando Asterisk, é de extrema importância que o IP em que o serviço estej
 Salve o arquivo, reinicie sua máquina e pronto!</br>
 Dica: utilize "**ping www.google.com**" para testar a conexão.
 
+<hr>
+
+<p align="center"><strong>Reconfigurando SSH para aumentar a segurança</strong></p>
+
+SSH na nossa máquina geralmente utiliza a porta padrão 22, iremos muda-la para aumentar a segurança e evitar algum ataque.</br>
+
+Para isso:
+1 - Acesse o seguinte diretório: "/etc/ssh"
+
+2 - Usando algum editor de texto abra o arquivo "**sshd_config**" dentro do diretório informado no passo 1.
+
+3 - Aberto o arquivo irá conter algumas configurações do SSH, procure a linha que contém a porta do SSH (por padrão é 22), remova o comentário e altere a porta padrão por uma porta livre que você desejar.
+
+4 - No mesmo arquivo procure a linha "**PermitRootLogin**", retire o comentário caso haja e altere o valor da variável para "**no**", impedindo assim que usuários não autenticados possam estabelecer conexão SSH entre máquinas.
+
